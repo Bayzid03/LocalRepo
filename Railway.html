@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Management System</title>
+  <link rel="stylesheet" href="Railway.css">
+</head>
+
+<body>
+  <header>
+    <h1>Railway Management System</h1>
+  </header>
+
+  <marquee direction="right">Bangladesh Railway<br>নিরাপদ . আরামদায়ক . সাশ্রয়ী</marquee>
+
+  <div class="input-group">
+    <button type="submit"><a href="login.html">Sign Up</a></button>
+  </div>
+
+  <nav>
+    <h2>
+      <a href="#" class="logo">Bd_Rail</a>
+    </h2>
+    <br>
+    <a href="#">Home</a>
+    <a href="#">Trains</a>
+    <a href="#">Bookings</a>
+    <a href="#">Contact</a>
+    <a href="#">Information</a>
+  </nav>
+
+  <div class="container">
+    <img
+      src="https://bangladesh-railway.s3-ap-southeast-1.amazonaws.com/production/content-media/b66f9a625698a6728b8824899d19a771.jpg"
+      alt="" style="width:80%" class="right">
+    <div class="text-block">
+      <h4>Online Payment Method</h4>
+      <p>Bkash Nogod Rocket</p>
+    </div>
+  </div>
+
+  <section>
+    <h2>Instructions to Purchase Tickets</h2>
+    <p>(1) Tickets can be bought online ten days in advance.</p>
+    <p>(2) You can pay for the tickets using mobile financial services: Bkash, Nagad, Rocket</p>
+    <p>(3) In case of payment or transaction failure, the deducted amount would be refunded by your bank or MFS provider
+      within 8 business days.</p>
+    <p>(4) If you have not received your ticket copy in email, kindly check your Spam / Junk folder.</p>
+  </section>
+
+  <marquee direction="right">Please help Bangladesh railways and government of Bangladesh in moving towards a digitized and
+    cashless economy. Eradicate black money.
+  </marquee>
+
+  <div class="row">
+    <div class="column">
+      <img src="https://eticket.railway.gov.bd/assets/img/home/search.svg" alt="" style="width:60%">
+      <h3>SEARCH</h3>
+    </div>
+    <div class="column">
+      <img src="https://eticket.railway.gov.bd/assets/img/home/select.svg" alt="" style="width:60%">
+      <h3>SELECT</h3>
+    </div>
+    <div class="column">
+      <img src="https://eticket.railway.gov.bd/assets/img/home/pay.svg" alt="" style="width:60%">
+      <h3>PAY</h3>
+    </div>
+  </div>
+
+  <table>
+    <caption><b>Train Schedule</b></caption>
+    <thead>
+      <tr>
+        <th>Train ID</th>
+        <th>Train Name</th>
+        <th>Departure Station</th>
+        <th>Arrival Station</th>
+        <th>Departure Time</th>
+        <th>Arrival Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>Express One</td>
+        <td>Station A</td>
+        <td>Station B</td>
+        <td>08:00 AM</td>
+        <td>12:00 PM</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>002</td>
+        <td>Express Two</td>
+        <td>Station A</td>
+        <td>Station B</td>
+        <td>09:00 AM</td>
+        <td>1:00 PM</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>003</td>
+        <td>Express Three</td>
+        <td>Station B</td>
+        <td>Station C</td>
+        <td>11:00 AM</td>
+        <td>12:30 PM</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>004</td>
+        <td>Express Four</td>
+        <td>Station C</td>
+        <td>Station D</td>
+        <td>11:35 AM</td>
+        <td>1:25 PM</td>
+      </tr>
+    </tbody>
+  </table>
+  <h1>Railway Reservation</h1>
+  <form action="submit.php" method="post">
+    <p>Name: <input type="text" name="name" required></p>
+    <p>Age: <input type="number" name="age" min="1" max="99" required></p>
+    <p>Address: <input type="text" name="address" required></p>
+    <p>Email: <input type="email" name="email" required></p>
+    <p>Telephone: <input type="tel" name="phone" required></p>
+    <p>Select your Gender:
+      <select name="Gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </p>
+    <p>Select your city:
+      <select name="city" required>
+        <option value="Dhaka">Dhaka</option>
+        <option value="Khulna">Khulna</option>
+        <option value="Sylhet">Sylhet</option>
+        <option value="Chittagong">Chittagong</option>
+      </select>
+    </p>
+    <p><input type="submit" value="Submit"></p>
+    <p><input type="reset" value="Reset"></p>
+  </form>
+
+  <footer>
+    <p>&copy; 2024 Railway Management System</p>
+  </footer>
+</body>
+
+</html>
